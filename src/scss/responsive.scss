@@ -208,7 +208,31 @@
   }
   }
   
-
+  .each-footer {
+    width: 100%;
+    .logo-footer {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 36px;
+      width: 100%;
+      a{
+        color: #fbe0ca;
+      &:hover{
+        text-decoration: none;
+      }  
+      }
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      li{
+        width: 49%;
+        a{
+          color: #fbe0ca;
+        }
+      }
+    }
+  }
 
 
 
