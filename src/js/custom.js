@@ -35,7 +35,7 @@ $(document).ready(function() {
     margin: 40,
     dots: false,
     nav:false,
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause:true,
     animateIn:"fadeIn",
     //slideSpeed : 8000,
@@ -58,19 +58,19 @@ $(document).ready(function() {
   })
 
 
-  $('.pop-mov-gal-slider').owlCarousel({
+  $('.mov-gal-slider').owlCarousel({
     loop:true,
     margin: 10,
-    dots: true,
+    dots: false,
     nav:false,
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause:true,
     animateIn:"fadeIn",
     //slideSpeed : 8000,
     //autoplaySpeed : 4000,
     responsive:{
         0:{
-            items:1
+            items:3
         },
         600:{
             items:4
@@ -108,4 +108,4 @@ $(document).ready(function() {
 
 
 
-<!--end-->
+//<!--end-->

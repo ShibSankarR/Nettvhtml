@@ -6,7 +6,8 @@ body {
     font-weight: 400;
   }
   .common-space {
-    padding-top: 80px;
+    padding: 80px 0;
+    border-bottom: 8px solid #422626;
   }
   $brown: #aa8163;
   $green: #82a43a;
@@ -18,7 +19,7 @@ body {
   
   
   /*===== Main Style =====*/
-  
+ 
   
   /*===== Header =====*/
   
@@ -128,6 +129,7 @@ body {
   .banner {
     position: relative;
     background: #1d0f0f;
+    border-bottom: 8px solid #422626;
     .banner-slider {
       z-index: 99;
     }
@@ -329,6 +331,25 @@ body {
         }
   }
   
+
+/*====== mov-gal-slider Slider ======*/
+
+.mov-gal-slider {
+  .owl-item {
+    .item{
+      border-radius: 5px;
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
   /*====== Products Slider ======*/
   
   
@@ -365,7 +386,7 @@ body {
       color: #fbe0ca;
       line-height: 80px;
       margin-bottom: 20px;
-      font-weight: 600;
+      font-weight: 300;
       position: relative;
       &::after {
         content: "";
@@ -375,8 +396,7 @@ body {
         position: absolute;
         bottom: -20px;
         left: 0;
-        right: 0;
-        margin: 0 auto;
+        right: auto;
       }
     }
   }
@@ -401,7 +421,40 @@ body {
     }
   }
   
-  
+  .membership {
+      background: url(../image/banner-poster2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 80px;
+      .membership-text {
+        h1{
+          text-align: right;
+          width: 100%;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 35pt;
+          margin-bottom: 30px;
+          color: #fbe0ca;
+          padding: 0 0px 0 0px;
+        }
+        p {
+          font-size: 15px;
+          color: #fff;
+          margin-bottom: 20px;
+          padding: 0 0px 0 0;
+          span{
+            color: #fbe0ca;
+            font-style: italic;
+            font-size: 16px;
+          }
+        }
+        .page-btn {
+          text-align: right;
+          width: 100%;
+        }
+      }
+  }
   /*===== News &Updates =====*/
   
   .news{

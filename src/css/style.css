@@ -6,7 +6,8 @@ body {
   font-weight: 400; }
 
 .common-space {
-  padding-top: 80px; }
+  padding: 80px 0;
+  border-bottom: 8px solid #422626; }
 
 button:focus {
   outline: none; }
@@ -100,7 +101,8 @@ a.navbar-brand.logo {
 /*===== Banner =====*/
 .banner {
   position: relative;
-  background: #1d0f0f; }
+  background: #1d0f0f;
+  border-bottom: 8px solid #422626; }
   .banner .banner-slider {
     z-index: 99; }
   .banner .banner-video {
@@ -269,6 +271,12 @@ a.navbar-brand.logo {
   .about-text .page-btn {
     margin-top: 30px; }
 
+/*====== mov-gal-slider Slider ======*/
+.mov-gal-slider .owl-item .item {
+  border-radius: 5px; }
+  .mov-gal-slider .owl-item .item img {
+    border-radius: 5px; }
+
 /*====== Products Slider ======*/
 .page-btn3 {
   margin: 50px 0 0; }
@@ -298,7 +306,7 @@ a.navbar-brand.logo {
     color: #fbe0ca;
     line-height: 80px;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 300;
     position: relative; }
     .page-title h1::after {
       content: "";
@@ -308,8 +316,7 @@ a.navbar-brand.logo {
       position: absolute;
       bottom: -20px;
       left: 0;
-      right: 0;
-      margin: 0 auto; }
+      right: auto; }
 
 .product-box {
   background: #fff;
@@ -326,6 +333,34 @@ a.navbar-brand.logo {
     font-size: 14px;
     margin-bottom: 20px;
     font-weight: 400; }
+
+.membership {
+  background: url(../image/banner-poster2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px; }
+  .membership .membership-text h1 {
+    text-align: right;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 35pt;
+    margin-bottom: 30px;
+    color: #fbe0ca;
+    padding: 0 0px 0 0px; }
+  .membership .membership-text p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 0 0px 0 0; }
+    .membership .membership-text p span {
+      color: #fbe0ca;
+      font-style: italic;
+      font-size: 16px; }
+  .membership .membership-text .page-btn {
+    text-align: right;
+    width: 100%; }
 
 /*===== News &Updates =====*/
 .news .page-title h1::after {
@@ -358,7 +393,7 @@ a.navbar-brand.logo {
 @media only screen and (max-width: 767px) {
   .top-header {
     padding: 15px 0;
-    background: #eaeaea; }
+    display: none; }
     .top-header ul {
       padding: 0;
       margin: 0; }
@@ -383,7 +418,6 @@ a.navbar-brand.logo {
         margin-left: 20px; }
 
   .header {
-    background: #fdf9f6;
     position: relative; }
     .header .main-header {
       width: 100%; }
@@ -430,7 +464,9 @@ a.navbar-brand.logo {
     top: 20%;
     right: 8%; }
     .navbar-toggler .navbar-toggler-icon i {
-      font-size: 32px; }
+      font-size: 32px;
+      color: #fbe0ca;
+      margin: 10px 0; }
 
   .banner .banner-text {
     padding: 40px; }
@@ -439,8 +475,7 @@ a.navbar-brand.logo {
       font-weight: 600;
       line-height: 36pt;
       margin-bottom: 40px;
-      position: relative;
-      color: #333; }
+      position: relative; }
       .banner .banner-text h1::after {
         content: "";
         width: 68px;
@@ -452,13 +487,15 @@ a.navbar-brand.logo {
     .banner .banner-text h2 {
       font-size: 20px;
       font-weight: 500;
-      line-height: 36pt;
+      line-height: 24pt;
       margin-bottom: 20px;
-      color: #333;
-      text-align: center; }
+      text-align: left; }
     .banner .banner-text p {
       font-size: 10px;
       margin-bottom: 20px; }
+
+  .banner .banner-video {
+    top: 19%; }
 
   .page-btn, .page-btn2, .page-btn3 {
     margin-right: 10px;
@@ -473,28 +510,22 @@ a.navbar-brand.logo {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    padding: 0 40px; }
+    padding: 40px 15px;
+    background: rgba(0, 0, 0, 0.2); }
     .about-text h1 {
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 600;
-      line-height: 30pt;
-      margin-bottom: 30px;
-      text-align: left;
-      color: #333;
-      padding: 0 0px 0 0px; }
+      line-height: 22pt; }
       .about-text h1 span {
         width: 100%;
-        color: #767676;
         font-style: italic;
         font-size: 15px; }
     .about-text h3 {
-      color: #333;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 600;
       margin-bottom: 20px; }
     .about-text p {
       font-size: 12px;
-      color: #767676;
       margin-bottom: 20px;
       padding: 0 40px 0 0; }
       .about-text p span {
@@ -503,24 +534,11 @@ a.navbar-brand.logo {
       margin-top: 30px; }
 
   .page-title {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    padding: 0 15px; }
     .page-title h1 {
-      font-size: 36px;
-      color: #333;
-      line-height: 80px;
-      margin-bottom: 20px;
-      font-weight: 600;
-      position: relative; }
-      .page-title h1::after {
-        content: "";
-        width: 68px;
-        height: 7px;
-        background: #82a43a;
-        position: absolute;
-        bottom: -20px;
-        left: 0;
-        right: 0;
-        margin: 0 auto; }
+      font-size: 30px;
+      line-height: 40px; }
 
   .news-updates ul {
     padding: 0;
@@ -530,4 +548,11 @@ a.navbar-brand.logo {
       margin-right: 31px;
       width: 100%;
       overflow: hidden;
-      padding-bottom: 30px; } }
+      padding-bottom: 30px; }
+
+  .membership .membership-text {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 40px 15px; }
+    .membership .membership-text h1 {
+      font-size: 30px;
+      line-height: 30pt; } }
