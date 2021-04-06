@@ -235,6 +235,7 @@ a.navbar-brand.logo {
   background: url(../image/about-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   padding-bottom: 80px; }
 
@@ -271,13 +272,6 @@ a.navbar-brand.logo {
   .about-text .page-btn {
     margin-top: 30px; }
 
-/*====== mov-gal-slider Slider ======*/
-.mov-gal-slider .owl-item .item {
-  border-radius: 5px; }
-  .mov-gal-slider .owl-item .item img {
-    border-radius: 5px; }
-
-/*====== Products Slider ======*/
 .page-btn3 {
   margin: 50px 0 0; }
   .page-btn3 a {
@@ -295,9 +289,6 @@ a.navbar-brand.logo {
       background: #aa8163;
       border: 1px solid #aa8163;
       color: #fff; }
-
-.product-box img {
-  width: 100%; }
 
 .page-title {
   margin-bottom: 40px; }
@@ -318,28 +309,20 @@ a.navbar-brand.logo {
       left: 0;
       right: auto; }
 
-.product-box {
-  background: #fff;
-  padding: 50px 20px;
-  overflow: hidden; }
-  .product-box:hover {
-    background: #fdf9f6; }
-  .product-box h4 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: 600; }
-  .product-box p {
-    color: #767676;
-    font-size: 14px;
-    margin-bottom: 20px;
-    font-weight: 400; }
+/*====== mov-gal-slider Slider ======*/
+.mov-gal-slider .owl-item .item {
+  border-radius: 5px; }
+  .mov-gal-slider .owl-item .item img {
+    border-radius: 5px; }
 
+/*====== mov-gal-slider Slider ======*/
 .membership {
   background: url(../image/banner-poster2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  background-attachment: fixed; }
   .membership .membership-text h1 {
     text-align: right;
     width: 100%;

@@ -288,6 +288,7 @@ body {
       background: url(../image/about-img.jpg);
       background-position: center;
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: cover;
       padding-bottom: 80px;
   }
@@ -330,29 +331,6 @@ body {
         margin-top: 30px;
         }
   }
-  
-
-/*====== mov-gal-slider Slider ======*/
-
-.mov-gal-slider {
-  .owl-item {
-    .item{
-      border-radius: 5px;
-      img {
-        border-radius: 5px;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-  /*====== Products Slider ======*/
-  
-  
   .page-btn3{
     margin: 50px 0 0;
     a{
@@ -371,12 +349,6 @@ body {
         border: 1px solid $brown;
         color: #fff;
       }
-    }
-  }
-  
-  .product-box {
-    img {
-      width: 100%;
     }
   }
   .page-title {
@@ -400,26 +372,21 @@ body {
       }
     }
   }
-  
-  .product-box{
-    background: #fff;
-    padding: 50px 20px;
-    overflow: hidden;
-    &:hover{
-      background: #fdf9f6;
-    }
-    h4{
-      font-size: 20px;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-    p {
-      color: #767676;
-      font-size: 14px;
-      margin-bottom: 20px;
-      font-weight: 400;
+
+/*====== mov-gal-slider Slider ======*/
+
+.mov-gal-slider {
+  .owl-item {
+    .item{
+      border-radius: 5px;
+      img {
+        border-radius: 5px;
+      }
     }
   }
+}
+
+/*====== mov-gal-slider Slider ======*/
   
   .membership {
       background: url(../image/banner-poster2.jpg);
@@ -427,6 +394,7 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       padding-bottom: 80px;
+      background-attachment: fixed;
       .membership-text {
         h1{
           text-align: right;
