@@ -130,6 +130,10 @@ body {
     position: relative;
     background: #1d0f0f;
     border-bottom: 8px solid #422626;
+    background: url(../image/banner-overlay.jpg) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     .banner-slider {
       z-index: 99;
     }
@@ -423,54 +427,49 @@ body {
         }
       }
   }
-  /*===== News &Updates =====*/
+
   
-  .news{
-    .page-title {
-        h1{
-          &::after {
-            display: none;
-          }
-        }
+/*===== Footer =====*/
+.footer{
+  background: #0d0000;
+  padding: 50px 0;
+}
+  .each-footer {
+    width: 100%;
+    .logo-footer {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 36px;
+      width: 100%;
+      a{
+        color: #fbe0ca;
+      &:hover{
+        text-decoration: none;
+      }  
+      }
     }
-  }
-  
-  .news-updates{
     ul{
       padding: 0;
       margin: 0;
       li{
         display: inline-block;
-        margin-right: 31px;
-        width: 46%;
-        overflow: hidden;
-        padding-bottom: 30px;
-        
+        width: 33%;
+        text-align: center;
+        margin-bottom: 20px;
+        a{
+          color: #fbe0ca;
+        }
       }
     }
   }
-  .news-box {
-    img{
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    h4{
-      font-size: 20px;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
+  
+  .copyright {
     p {
-      color: #767676;
+      margin: 20px 0;
+      color: #fbe0ca;
       font-size: 14px;
-      margin-bottom: 20px;
-      font-weight: 400;
-      padding: 0 48px 0 0;
     }
   }
-  
-  
-  
-  
   
   
   

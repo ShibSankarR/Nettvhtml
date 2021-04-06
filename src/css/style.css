@@ -102,7 +102,11 @@ a.navbar-brand.logo {
 .banner {
   position: relative;
   background: #1d0f0f;
-  border-bottom: 8px solid #422626; }
+  border-bottom: 8px solid #422626;
+  background: url(../image/banner-overlay.jpg) no-repeat 0 0;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
   .banner .banner-slider {
     z-index: 99; }
   .banner .banner-video {
@@ -345,33 +349,37 @@ a.navbar-brand.logo {
     text-align: right;
     width: 100%; }
 
-/*===== News &Updates =====*/
-.news .page-title h1::after {
-  display: none; }
+/*===== Footer =====*/
+.footer {
+  background: #0d0000;
+  padding: 50px 0; }
 
-.news-updates ul {
-  padding: 0;
-  margin: 0; }
-  .news-updates ul li {
-    display: inline-block;
-    margin-right: 31px;
-    width: 46%;
-    overflow: hidden;
-    padding-bottom: 30px; }
+.each-footer {
+  width: 100%; }
+  .each-footer .logo-footer {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    width: 100%; }
+    .each-footer .logo-footer a {
+      color: #fbe0ca; }
+      .each-footer .logo-footer a:hover {
+        text-decoration: none; }
+  .each-footer ul {
+    padding: 0;
+    margin: 0; }
+    .each-footer ul li {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      margin-bottom: 20px; }
+      .each-footer ul li a {
+        color: #fbe0ca; }
 
-.news-box img {
-  width: 100%;
-  margin-bottom: 10px; }
-.news-box h4 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 600; }
-.news-box p {
-  color: #767676;
-  font-size: 14px;
-  margin-bottom: 20px;
-  font-weight: 400;
-  padding: 0 48px 0 0; }
+.copyright p {
+  margin: 20px 0;
+  color: #fbe0ca;
+  font-size: 14px; }
 
 @media only screen and (max-width: 767px) {
   .top-header {
